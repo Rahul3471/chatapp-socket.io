@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js" integrity="sha512-luMnTJZ7oEchNDZAtQhgjomP1eZefnl82ruTH/3Oj/Yu5qYtwL7+dVRccACS/Snp1lFXq188XFipHKYE75IaQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- You can include CSS files or styles here -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Or include inline styles -->
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <!-- Your content goes here -->
+    <header>
+        <h1>Your Website Header</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Main Content Area</h2>
+        <p>This is where your main content goes.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+    <!-- You can include JavaScript files or scripts here -->
+    <script src="script.js"></script>
+    <!-- Or include inline scripts -->
+    <script>
+        var socket = io();
+        socket.on('message', function(data) {
+            document.write(data);
+        })
+    </script>
+</body>
+</html>
